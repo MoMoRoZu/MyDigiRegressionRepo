@@ -18,23 +18,21 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication(appLocation, true)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup'), 0)
+Mobile.tap(findTestObject('doneButton_WelcomePage'), 0)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Enter mobile number'), MSISDN, 0)
+Mobile.setText(findTestObject('enterMobileNumberPage'), MSISDN, 0)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (1)'), 0)
+Mobile.tap(findTestObject('doneButton_EnterMSISDNPage'), 0)
 
-Mobile.delay(10)
+Mobile.delay(7)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (2)'), 0)
+Mobile.tap(findTestObject('doneButton_OTPPage'), 0)
 
-Mobile.delay(25)
+Mobile.delay(20)
 
-def appMSISDN = Mobile.getText(findTestObject('TC_1/android.widget.TextView - 0160492859 (2)'), 0)
+def appMSISDN = Mobile.getText(findTestObject('MSISDNatUsagePage'), 0)
 
 Mobile.verifyEqual(appMSISDN, MSISDN)
-
-Mobile.delay(5)
 
 Mobile.closeApplication()
 
