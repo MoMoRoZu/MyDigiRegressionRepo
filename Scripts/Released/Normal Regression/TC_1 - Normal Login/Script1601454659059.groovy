@@ -14,4 +14,27 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+Mobile.startApplication(appLocation, true)
+
+Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup'), 0)
+
+Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Enter mobile number'), MSISDN, 0)
+
+Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (1)'), 0)
+
+Mobile.delay(10)
+
+Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (2)'), 0)
+
+Mobile.delay(25)
+
+def appMSISDN = Mobile.getText(findTestObject('TC_1/android.widget.TextView - 0160492859 (2)'), 0)
+
+Mobile.verifyEqual(appMSISDN, MSISDN)
+
+Mobile.delay(5)
+
+Mobile.closeApplication()
 

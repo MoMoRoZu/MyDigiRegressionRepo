@@ -4,25 +4,25 @@
    <name>TC_1 - Normal Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ca3bd18f-e07d-422e-9d00-fe57867a912b</testCaseGuid>
+   <testCaseGuid>0ad6a9d9-f75e-4c53-8c05-c13e3016184c</testCaseGuid>
    <variable>
       <defaultValue>'C:\\Users\\don_a\\Desktop\\Katalon_Studio_Windows_64-7.5.5\\Katalon_Studio_Windows_64-7.5.5\\MyDigi APK\\UAT APK\\2163.apk'</defaultValue>
       <description></description>
-      <id>cba2e4ff-07dc-4015-994f-e6500bffbf3b</id>
+      <id>84c3e52d-40aa-4f80-b5fb-09c383496b09</id>
       <masked>false</masked>
       <name>appLocation</name>
    </variable>
    <variable>
       <defaultValue>'0160492859'</defaultValue>
       <description></description>
-      <id>70a60010-5650-42bf-893f-c04f94113574</id>
+      <id>01c55ce7-dca5-4ca6-90b7-9232638b194b</id>
       <masked>false</masked>
       <name>MSISDN</name>
    </variable>
    <variable>
       <defaultValue>'Digi@123'</defaultValue>
       <description></description>
-      <id>d9da0698-afc2-427c-9eee-d0cbb4abfb5e</id>
+      <id>bd1acb06-30b8-40f4-a463-e791a1a6f35f</id>
       <masked>false</masked>
       <name>DguardPassword</name>
    </variable>

@@ -14,4 +14,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+Mobile.startApplication('C:\\Users\\don_a\\Desktop\\Katalon_Studio_Windows_64-7.5.5\\Katalon_Studio_Windows_64-7.5.5\\MyDigi APK\\UAT APK\\2163.apk', 
+    true)
+
+Mobile.getText(findTestObject('Object Repository/TC_1/android.widget.TextView - 0160492859 (2)'), 0)
+
+Mobile.closeApplication()
 
