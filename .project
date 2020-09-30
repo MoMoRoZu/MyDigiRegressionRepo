@@ -53,6 +53,7 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< HEAD
 			<id>1601432078055</id>
 			<name></name>
 			<type>10</type>
@@ -81,6 +82,18 @@
 		</filter>
 		<filter>
 			<id>1601434887035</id>
+=======
+			<id>1601428432898</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1601428432913</id>
+>>>>>>> branch 'master' of https://github.com/MoMoRoZu/MyDigiRegressionRepo.git
 			<name></name>
 			<type>6</type>
 			<matcher>
