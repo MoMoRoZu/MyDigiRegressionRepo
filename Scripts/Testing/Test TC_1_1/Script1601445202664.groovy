@@ -19,21 +19,27 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startApplication('C:\\Users\\don_a\\Desktop\\Katalon_Studio_Windows_64-7.5.5\\Katalon_Studio_Windows_64-7.5.5\\MyDigi APK\\UAT APK\\2163.apk', 
     true)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup'), 0)
+WebUI.delay(10)
 
-Mobile.setText(findTestObject('Object Repository/android.widget.EditText - Enter mobile number'), '160492859', 0)
+Mobile.tap(findTestObject('Object Repository/TC_1/android.view.ViewGroup (1)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (1)'), 0)
+Mobile.setText(findTestObject('Object Repository/TC_1/EditText - Enter mobile number'), '160492859', 0)
 
-Mobile.delay(10)
+Mobile.tap(findTestObject('Object Repository/TC_1/android.view.ViewGroup (2)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/android.view.ViewGroup (2)'), 0)
+WebUI.delay(10)
 
-Mobile.delay(30)
+Mobile.tap(findTestObject('Object Repository/TC_1/android.view.ViewGroup (3)'), 0)
 
-Mobile.tap(findTestObject('Object Repository/TC_1/android.view.ViewGroup'), 0)
+WebUI.delay(30)
 
-Mobile.verifyElementText(findTestObject('Object Repository/TC_1/android.widget.TextView - 0160492859'), '0160492859')
+Mobile.tap(findTestObject('Object Repository/TC_1/android.view.ViewGroup (4)'), 0)
+
+WebUI.delay(5)
+
+Mobile.verifyEqual(findTestObject('TC_1/android.widget.TextView - 0160492859'), 'TC_1/android.widget.TextView - 0160492859')
+
+WebUI.delay(5)
 
 Mobile.closeApplication()
 
